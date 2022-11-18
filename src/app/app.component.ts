@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import productsJSON from "../assets/product.json"
+
+interface PRODUCT {
+  title: string,
+  description: string,
+  image: string
+}
 
 @Component({
   selector: 'app-root',
@@ -7,4 +14,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shop-app';
+
+  products: PRODUCT[] = productsJSON
+  
+
+
 }
+
